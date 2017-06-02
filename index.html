@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    /* EXAMPLE 1 */
+    
+    
+    .content {
+        float: left;
+        display: inline-block;
+        background: lightblue;
+    }
+    .sidebar {
+        float: left;
+        display: inline-block;
+        background: wheat;
+    }
+    .example1 .content {
+        width: 68%;
+        margin-right: 1%;
+    }
+    
+    .example1 .sidebar {
+        width: 30%;
+        margin-left: 1%;
+    }
+    /* EXAMPLE 2 */
+    
+    .example2 .content {
+        width: -webkit-calc(70% - 20px);
+        width: -o-calc(70% - 20px);
+        width: calc(70% - 20px);
+    }
+    
+    .example2 .sidebar {
+        width: 30%;
+        margin-left: 20px;
+    }
+    /* EXAMPLE 3 */
+    
+    .example3 .content {
+        width: -webkit-calc(100% - 200px - 20px);
+        width: -o-calc(100% - 200px - 20px);
+        width: calc(100% - 200px - 20px);
+    }
+    
+    .example3 .sidebar {
+        width: 200px;
+        margin-left: 20px;
+    }
+    /* EXAMPLE 4 */
+    
+    .example4 .content {
+        width: -webkit-calc(100% - 300px - 20px - 20px);
+        width: -o-calc(100% - 300px - 20px - 20px);
+        width: calc(100% - 300px - 20px - 20px);
+    }
+    
+    .example4 .nav {
+        float: left;
+        width: 150px;
+        margin-right: 20px;
+        background: blue;
+    }
+    
+    .example4 .sidebar {
+        width: 150px;
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    HTML (упрощено для понимания)
+    <section class="example1">
+        <p>...</p>
+        <div class="content"> width: 68%</div>
+        <div class="sidebar"> width: 30%</div>
+    </section>
+    <section class="example2">
+        <p>...</p>
+        <div class="content">width: calc(70% - 20px)</div>
+        <div class="sidebar">width: 30%</div>
+    </section>
+    <section class="example3">
+        <p>...</p>
+        <div class="content"> width: calc(100% - 200px - 20px)</div>
+        <div class="sidebar"> width: 200px</div>
+    </section>
+    <section class="example4">
+        <p>...</p>
+        <div class="nav"> width: 150px</div>
+        <div class="content"> width: calc(100% - 300px - 20px - 20px)</div>
+        <div class="sidebar"> width: 150px</div>
+    </section>
+</body>
+
+</html>
